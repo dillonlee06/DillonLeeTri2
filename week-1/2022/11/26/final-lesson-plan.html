@@ -152,10 +152,10 @@ window.onload = wrap_img;
 <a class="anchor" href="#Data-Abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Abstraction<a class="anchor-link" href="#Data-Abstraction"> </a>
 </h1>
 <ul>
-<li>Data abstraction provides a seperation between the abstract properties of a data ype and the concrete details of its representation</li>
-<li>data abstractions manage complexity in programs by giving a collection of data a name without refrencing the specific etails of the representation</li>
-<li>Data Abstraction makes it easier to implement, develop and maintain code easier</li>
-<li>The ue of lists allows for multiple related values to be treated as a single value</li>
+<li>Data abstraction provides a separation between the abstract properties of a data type and the concrete details of its representation</li>
+<li>data abstractions manage complexity in programs by giving a collection of data a name without refrencing the specific elements of the representation</li>
+<li>Data Abstraction makes it easier to implement, develop and maintain code</li>
+<li>The use of lists allows for multiple related values to be treated as a single value</li>
 <li>In AP exam the index values for lists start rom 1 and not 0 like in python.</li>
 </ul>
 
@@ -178,7 +178,7 @@ window.onload = wrap_img;
 <a class="anchor" href="#Using-simple-lists-and-working-with-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using simple lists and working with variables<a class="anchor-link" href="#Using-simple-lists-and-working-with-variables"> </a>
 </h2>
 <ul>
-<li>Lists are a powerful tool that can be used to organise, maintain and develoop related data</li>
+<li>Lists are a powerful tool that can be used to organize, maintain and develop related data</li>
 <li>For example - A list of students in a class, if there was no list we would assign a variable to each student but if the data was in a list everyone would be under one variable. If a student left the class or was added instead of deleting entire variable we can edit the previous list.</li>
 <li>this helps organize data and make less mistakes</li>
 </ul>
@@ -260,7 +260,8 @@ Adding cream
 </h2>
 <ul>
 <li>A list of data can be further segregated using more similar characteristics in the data </li>
-<li>For example, the code segement below segregates the data given into 2 new lists. One that one contains plants and one that contains only shrubs.</li>
+<li>For example, the code segment below segregates the data given into 2 new lists. One that one contains plants and one that contains only shrubs.</li>
+<li>This can be used to also organize data received from API's and other resources.</li>
 </ul>
 
 </div>
@@ -360,7 +361,7 @@ Flowers ['Bellflower - Flower', 'China Pink - Flower', 'Daffodil - Flower', 'Eve
 
 <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">albums</span><span class="p">:</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Album: </span><span class="si">{}</span><span class="s2">, Artist: </span><span class="si">{}</span><span class="s2">, year: </span><span class="si">{}</span><span class="s2">"</span>
-          <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">year</span><span class="p">))</span> <span class="c1"># returns a segregated and labled presentation of the songs</span>
+          <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">year</span><span class="p">))</span> <span class="c1">#returns a segregated and labled presentation of the songs</span>
 </pre></div>
 
     </div>
@@ -414,11 +415,11 @@ Album: Ride the Lightning, Artist: Metallica, year: 1984
 <span class="s2">fox jumps</span><span class="se">\t</span><span class="s2">over </span>
 <span class="s2">the lazy dog"""</span>
 
-<span class="n">words</span> <span class="o">=</span> <span class="n">panagram</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="c1"># splitting the string above into individual words. Seperator here is any whitespace.</span>
+<span class="n">words</span> <span class="o">=</span> <span class="n">panagram</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="c1"># splitting the string above into individual words. Separator here is any whitespace.</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
 
 <span class="n">numbers</span> <span class="o">=</span> <span class="s2">"9,223,372,036,854,775,807"</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">))</span> <span class="c1"># seprator is ","</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">))</span> <span class="c1"># separator is ","</span>
 
 <span class="n">generated_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'9'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span>
                   <span class="s1">'2'</span><span class="p">,</span> <span class="s1">'2'</span><span class="p">,</span> <span class="s1">'3'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span>
@@ -431,7 +432,7 @@ Album: Ride the Lightning, Artist: Metallica, year: 1984
 <span class="n">values</span> <span class="o">=</span> <span class="s2">""</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">generated_list</span><span class="p">)</span> <span class="c1"># converting the list into a string</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
 
-<span class="n">values_list</span> <span class="o">=</span> <span class="n">values</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="c1"># seperator is any whitespace</span>
+<span class="n">values_list</span> <span class="o">=</span> <span class="n">values</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="c1"># separator is any whitespace</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">values_list</span><span class="p">)</span>
 </pre></div>
 
